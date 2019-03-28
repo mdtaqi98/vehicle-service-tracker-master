@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SerFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toEndOf="@+id/TextView"
+    tools:context="com.lodhahonda.lodhahonda.ServiceFragment">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/font"
+        android:gravity="right|start"
+        android:includeFontPadding="false"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="@string/enter_the_number"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView1"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/regno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/textfield"
+        android:capitalize="characters"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="Vehicle Registration Number"
+        android:imeOptions="actionSend"
+        android:inputType="text|textCapCharacters|textCapWords"
+        android:linksClickable="false"
+        android:longClickable="false"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/regnobtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/regno"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/submit"
+        android:onClick="submitmt"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/showregno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/regno"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>
